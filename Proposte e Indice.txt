@@ -1,0 +1,6 @@
+1) Introduzione
+2) Stato dell'arte
+3) Metodo / Argomento cardine
+4) (Esperimenti)
+5) Risultati
+6) Conclusioni
