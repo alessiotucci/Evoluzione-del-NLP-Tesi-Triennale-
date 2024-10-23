@@ -1,0 +1,13 @@
+
+1.2 eliminare la motivazione personale dal capitolo
+
+2.3 approfondire le tecniche di machine learning e le differenze con altri
+approcci
+
+3.1 differenza con i paragrafi precedenti, rileggere in un ottica olistica
+
+4.2 linguaggio naturale (?)
+
+5.3 inserire un hook o gancio alla parte sociologica altrimenti 5.4
+
+//TODO: MARTEDI 29 Ottobre
