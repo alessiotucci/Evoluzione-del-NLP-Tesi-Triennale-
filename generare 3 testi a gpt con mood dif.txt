@@ -1,0 +1,2 @@
+generare 3 testi a gpt con mood differenti (positivio,neutro,negativo) 
+e poi tramite uno strumento di sentiment analysis andare a vedere se classifica correttamente  i testi. 
