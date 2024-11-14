@@ -21,6 +21,11 @@ def interpret_sentiment(compound):
 def main():
     # Lista dei file da analizzare
     files = ["Elezioni_positivo.txt", "Elezioni_neutro.txt", "Elezioni_negativo.txt"]
+    # Add all .txt files from the TEST folder
+    test_folder = "TEST"
+    for file_name in os.listdir(test_folder):
+        if file_name.endswith(".txt"):
+            files.append(os.path.join(test_folder, file_name))
     
     for file_name in files:
         try:

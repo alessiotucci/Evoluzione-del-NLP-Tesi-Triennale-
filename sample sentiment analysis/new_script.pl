@@ -4,8 +4,8 @@ use warnings;
 use Lingua::EN::Opinion;
 use Term::ANSIColor;
 use File::Slurp;
+use File::Spec;
 
-# Funzione per analizzare il sentimento
 sub analyze_sentiment
 {
     my ($text) = @_;
@@ -43,15 +43,26 @@ sub interpret_sentiment
 	{
         return "Negativo", 'red';
     }
-	else {
+	else
+	
+	{
         return "Neutro", 'yellow';
     }
 }
 
 # Funzione principale
-sub main {
+sub main
+{
     my @files = ("Elezioni_positivo.txt", "Elezioni_neutro.txt", "Elezioni_negativo.txt");
-
+ # Add all .txt files from the TEST folder
+    my $test_folder = "TEST";
+    opendir(my $dh, $test_folder) or die "Cannot open directory $test_folder: $!";
+    while (my $file_name = readdir($dh))
+	{
+        next unless $file_name =~ /\.txt$/;  # Only process .txt files
+        push @files, File::Spec->catfile($test_folder, $file_name);
+    }
+    closedir($dh);
     foreach my $file_name (@files)
 	{
         if (-e $file_name)
