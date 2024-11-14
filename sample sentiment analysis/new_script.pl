@@ -6,19 +6,23 @@ use Term::ANSIColor;
 use File::Slurp;
 
 # Funzione per analizzare il sentimento
-sub analyze_sentiment {
+sub analyze_sentiment
+{
     my ($text) = @_;
     my $opinion = Lingua::EN::Opinion->new(text => $text, stem => 1);
     my $scores;
-    eval {
+    eval
+	{
         $scores = $opinion->analyze();
     };
-    if ($@) {
+    if ($@)
+	{
         die "Error analyzing sentiment: $@";
     }
 
     my ($positive, $negative, $neutral) = (0, 0, 0);
-    foreach my $score (@$scores) {
+    foreach my $score (@$scores)
+	{
         $positive++ if $score == 1;
         $negative++ if $score == -1;
         $neutral++ if $score == 0;
@@ -28,13 +32,18 @@ sub analyze_sentiment {
 }
 
 # Funzione per interpretare il sentimento
-sub interpret_sentiment {
+sub interpret_sentiment
+{
     my ($positive, $negative, $neutral) = @_;
-    if ($positive > $negative && $positive > $neutral) {
+    if ($positive > $negative && $positive > $neutral)
+	{
         return "Positivo", 'green';
-    } elsif ($negative > $positive && $negative > $neutral) {
+    }
+	elsif ($negative > $positive && $negative > $neutral)
+	{
         return "Negativo", 'red';
-    } else {
+    }
+	else {
         return "Neutro", 'yellow';
     }
 }
@@ -43,8 +52,10 @@ sub interpret_sentiment {
 sub main {
     my @files = ("Elezioni_positivo.txt", "Elezioni_neutro.txt", "Elezioni_negativo.txt");
 
-    foreach my $file_name (@files) {
-        if (-e $file_name) {
+    foreach my $file_name (@files)
+	{
+        if (-e $file_name)
+		{
             my $content = read_file($file_name);
 
             my ($positive, $negative, $neutral) = analyze_sentiment($content);
@@ -60,7 +71,9 @@ sub main {
 
             print "\nPremi Invio per continuare...";
             <STDIN>;
-        } else {
+        }
+		else
+		{
             print color('bold red'), "Errore: Il file $file_name non è stato trovato.", color('reset'), "\n";
         }
     }
