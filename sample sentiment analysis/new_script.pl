@@ -3,7 +3,6 @@ use strict;
 use warnings;
 use Lingua::EN::Opinion;
 use Term::ANSIColor;
-use File::Slurp;
 use File::Spec;
 
 sub analyze_sentiment
@@ -67,8 +66,10 @@ sub main
 	{
         if (-e $file_name)
 		{
-            my $content = read_file($file_name);
-
+            # source with explanation
+			# https://www.perlmonks.org/?node_id=287647
+			open FILEHANDLE, $file_name or die $!;
+			my $content = do { local $/; <FILEHANDLE> };
             my ($positive, $negative, $neutral) = analyze_sentiment($content);
             my ($overall_sentiment, $color) = interpret_sentiment($positive, $negative, $neutral);
 
