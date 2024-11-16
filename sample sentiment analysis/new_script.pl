@@ -3,7 +3,6 @@ use strict;
 use warnings;
 use Lingua::EN::Opinion;
 use Term::ANSIColor;
-use File::Spec;
 
 sub analyze_sentiment
 {
