@@ -3,6 +3,7 @@ use strict;
 use warnings;
 use Lingua::EN::Opinion;
 use Term::ANSIColor;
+use File::Spec;
 
 sub analyze_sentiment
 {
@@ -53,14 +54,14 @@ sub main
 {
     my @files = ("Elezioni_positivo.txt", "Elezioni_neutro.txt", "Elezioni_negativo.txt");
  # Add all .txt files from the TEST folder
-    my $test_folder = "TEST";
-    opendir(my $dh, $test_folder) or die "Cannot open directory $test_folder: $!";
-    while (my $file_name = readdir($dh))
-	{
-        next unless $file_name =~ /\.txt$/;  # Only process .txt files
-        push @files, File::Spec->catfile($test_folder, $file_name);
-    }
-    closedir($dh);
+    # my $test_folder = "TEST";
+    # opendir(my $dh, $test_folder) or die "Cannot open directory $test_folder: $!";
+    # while (my $file_name = readdir($dh))
+	# {
+    #     next unless $file_name =~ /\.txt$/;  # Only process .txt files
+    #     push @files, File::Spec->catfile($test_folder, $file_name);
+    # }
+    # closedir($dh);
     foreach my $file_name (@files)
 	{
         if (-e $file_name)

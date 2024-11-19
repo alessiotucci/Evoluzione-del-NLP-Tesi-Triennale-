@@ -1,0 +1,62 @@
+dopo aver scritto e controllato entrambi gli script (che comunque sono stati sviluppati sempre con un massiccio aiuto da parte di ChatGPT e BingAi) ho chiesto sempre agli stess i chatbot di produrre tre file di testo per eseguire i primi test e controllare i risultati.
+L'argomento di tutti e tre i testi riguarda un fatto di recente attualita, ovvero la vittora di Donald J. Trump alle elezioni presidenziali del 2024.
+I due programmi hanno portato dei risultati diversi. Lo script scritto in Perl utilizza dei moduli che si appoggiano ad un database lessicale, questo ha inciso fortemente sul come interpretare i risultati della prima funzione intermedia. Nella subroutine `analyze_sentiment` viene assegnato un valore per ogni frase, e una volta contati i questi valori si estrapola il sentimento generale. Questo ha portato a interpretare sia il testo Positivo che il testo Neutro entrambi come testi neutri. 
+
+==================================================
+Analisi del file: Elezioni_positivo.txt
+==================================================
+Polarita: Neutro
+Positivo: 3
+Neutro: 6
+Negativo: 0
+
+==================================================
+Analisi del file: Elezioni_neutro.txt
+==================================================
+Polarita: Neutro
+Positivo: 3
+Neutro: 5
+Negativo: 0
+
+Il testo che invece viene correttamente identificato è il testo dal sentimento prevalentemente negativo.
+
+==================================================
+Analisi del file: Elezioni_negativo.txt
+==================================================
+Polarita: Negativo
+Positivo: 1
+Neutro: 3
+Negativo: 5
+
+Probabilmente l'utilizzo di file di testo piu lunghi avrebbe potuto giovare a questo tipo di approccio. Infatti una maggiore quantita di frasi avrebbe restituito punteggi piu veritieri.
+
+Un comportamente davvero inatteso è quello ottenuto dallo script in Python. Infatti tutti e tre i testi vengono valutati con un valore complessivamente positivo. La libreria `vader` inoltre ci restituisce  dei numeri decimali, quindi siamo in grado di vedere solo un leggero cambiamento nella polarita, positivita e neutralita del testo.
+
+==================================================
+Analisi del file: Elezioni_positivo.txt
+==================================================
+Polarità: 0.934 (Positivo)
+Positivo: 0.084
+Neutro: 0.916
+Negativo: 0.000
+
+
+==================================================
+Analisi del file: Elezioni_neutro.txt
+==================================================
+Polarità: 0.823 (Positivo)
+Positivo: 0.062
+Neutro: 0.938
+Negativo: 0.000
+
+
+==================================================
+Analisi del file: Elezioni_negativo.txt
+==================================================
+Polarità: 0.586 (Positivo)
+Positivo: 0.028
+Neutro: 0.972
+Negativo: 0.000
+
+Il comportamento osservato è legato al funzionamento dell'algoritmo `vader`. Infatti l'algoritmo è progettato per analizzare il testo in modo contestuale e non solo mediante una ricerca di parole positivie e negative.
+L'analisi quindi riporta un risultato positivo poiche le frasi articolate e ben strutturate e la mancanza di un linguaggio aggressivo o brutale fanno sembrare il testo come un analisi critica piuttosto che un commento puramente negativo.
