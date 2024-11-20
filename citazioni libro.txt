@@ -1,0 +1,22 @@
+"Il mondo digitale è poco indulgente nei confronti della saggezza: i suoi valori sono plasmati dall'approvazione, non dall'introspezione"
+
+"I pionieri dell'intelligenza artificiale avevano abbandonato l'idea illuministica di ridurre il mondo a regole meccanicistiche e si erano impegnati nella costruzione di approssimazioni della realta. [...] Nasceva cosi la disciplina moderna dell'apprendimento automatico: macchine che imparano attraverso l'esperienza"
+
+"Per tutti gli anni novanta i ricercatori provarono a elaborare programmi di traduzione linguistica basati su regole precise. Sebbene avessero ottenuto qualche successo in esperimenti di laboratorio, i loro sforzi non davano buoni risultati nel mondo reale. La variabilita e le sottigliezze del linguaggio non si possono ridurre a semplici regole."
+
+"L'intelligenza artificiale per la traduzione linguistica è rimasta stagnante per decenni, ma poi, grazie a una combinazione di tecniche e di potenza computazionale, è avanzata a ritmo prodigioso."
+
+
+"Ma è difficile prevederne le ripercussioni sociali. Consideriamo per esempio, la traduzione linguistica. [...] Affidandosi alla traduzione automatica, la gente fara meno sforzi per cercare di comprendere altre culture o nazioni, rafforzando cosi la tendenza naturale a vedere il mondo attraverso le lenti della propria cultura?"
+
+"La necessita di monitoraggio da parte di Facebook e di altre aziende hanno promosso un'estensiva opera di ricerca e sviluppo nel tentativo di automatizzare l'analisi di testi e immagini creando forme di apprendimento automatico, elaborazione del linguaggio naturale e tecniche di visione computerizzata sempre piu sofisticate."
+
+"Approfittare di una cura dei contenuti cosi automatizzata puo essere talmente semplice e soddisfacente che la si nota soltanto quando è assente" 
+
+
+"I tentativi di regolamentare le piattaforme di rete e la loro intelligenza artificiale si allineeranno agli obiettivi politici e sociali di varie nazioni (per esempio, ridurre la criminalita e combattere i pregiudizi) e produrranno infine soiceta piu giuste?"
+
+
+"In un'epoca in cui le macchine svolgono, in misura sempre maggiore, compiti di cui un tempo soltanto gli esseri umani erano in grado di occuparsi, che cosa costruira la nostra identita?"
+
+"Trasformando la natura del lavoro, l'IA puo compromettere il senso di identita, appagamento e sicurezza finanziaria di molte persone. I piu colpiti da tale cambiamento e potenziale scardinamento saranno probabilmente coloro che svolgono lavori di tipo manuale e di media gestione che richiedono uno specifico addestramento, nonche lavori professionali che prevedono la revisione o l'interpretazione di dati o la stesura di document in forme standardizzate"

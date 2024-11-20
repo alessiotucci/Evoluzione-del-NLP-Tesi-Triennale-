@@ -1,0 +1,20 @@
+Un altro esempio della versalita e attivita della comunita Python puo essere riscontrato nella abbondanza dei tutorial o delle guide reperibili online.
+Da questo punto di vista si puo analizzare un video intitolato [`Johnny Depp vs Amber Heard twitter sentiment analysis | Is Camille Vasquez the real winner | NLP`](https://www.youtube.com/watch?v=YkOOqXpH2cE)
+Il video mostra come ottenere dati testuali da Twitter (Oggi chiamato X)  e utilizza lo strumento `Jupiter Notebook`, uno strumento open source per creare e condividere codice. In particolare il supporto con Python consente di creare rapidamente visualizzazione di dati con tabelle grafici etc.
+Il video puo essere definito come `code in public`, ovvero la pratica di scrivere e condividere codice sorgente in modo aperto e trasparente, in questo caso attraverso un video su Youtube.
+Lo strumento utilizzato per eseguire l'analisi è un modello pre-trained di Hugging Face specializzato su tweet. Lo scopo del video è ottenere un immagine dell'opinione pubblica riguardo il processo di Johnny Depp e Amber Heard.
+
+Sono stati analizzati anche l'opinione riguardo l'avvocato di Johnny Depp Camille Vasquez e la psicologa forense Shannon Curry. Nel processo di diffamazione del 2022, Johnny Depp, ha sostenuto di essere stato diffamato dalle accuse di Amber Heard.
+Shannon Curry, psicologa forense, ha testimoniato per Depp diagnosticando a Heard disturbi di personalità e confutando la sua affermazione di soffrire di PTSD.
+Camille Vasquez, avvocato di Depp, è stata nota per la sua abilità in aula e il suo stile incisivo.
+
+Il video mostra l'utilizzo di conda con diverse librerie, il procedimento riguardante qeusta analisi consiste in diversi step:
+La prima raccolta dei tweet avviene attraverso la rapida lettura di un articolo online, si tratta di un blog post su medium di Martin Beck "How to scrape tweets with snscrape. questo conferma la vivacita della comunita python.
+Raccolta dati: Vengono raccolti i tweet che menzionano personaggi specifici (Depp, Heard, ecc.) da Twitter utilizzando uno strumento come snscrape.
+Pulizia dei dati: I tweet vengono pre-elaborati per rimuovere elementi come URL, renderli tutti minuscoli e filtrare quelli non pertinenti.
+Analisi del sentiment: Un modello pre-addestrato di Hugging Face viene applicato ai tweet per determinare la polarità del sentimento (positivo, negativo, neutro).
+Visualizzazione dei risultati: I risultati vengono visualizzati graficamente per confrontare la sentiment polarity tra i diversi personaggi.
+Analisi avanzata: Vengono condotte analisi aggiuntive come l'analisi n-gram e la topic modeling per comprendere meglio i temi e le espressioni più comuni nei tweet.
+tecniche utilizzate:
+Librerie: pandas, numpy, nltk, Hugging Face Transformers, seaborn
+Tecniche: raccolta dati da Twitter, pulizia del testo, analisi del sentiment con modelli pre-addestrati, visualizzazione dei dati, analisi n-gram, topic modeling.
