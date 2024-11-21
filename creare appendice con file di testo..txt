@@ -1,0 +1,11 @@
+creare appendice con file di testo.txt usati negli esperimenti
+
+sottolineare  il comportamento diverso con le librerie e il linguaggi diversi inserire parte discussione. (anche in fase di discussione)
+
+inserire il codice come ho gia fatto. [sia capitolo di Perl che per il capitolo di Python]
+
+inserire il capitolo dell'opinion mining prima della parte sperimentale.
+Introdurre il concetto bene.
+
+
+ricontrollare typo formattazione etc. Numeri di pagina etc.
